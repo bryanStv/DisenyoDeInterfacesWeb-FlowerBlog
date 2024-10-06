@@ -1,3 +1,10 @@
+/* Cargando Fuente de letra */
+@font-face {
+    font-family: 'DatacronItalica';
+    src: url('../fonts/DatacronItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
 /* Makeshift CSS Reset */
 
 *{
@@ -33,6 +40,10 @@ header h1{
 	padding-left: 0;
 
 	text-align: left;
+}
+
+h1{
+	font-family: 'DatacronItalica',  sans-serif;
 }
 
 body {
