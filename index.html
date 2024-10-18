@@ -166,10 +166,10 @@
             <section>
                 <form action="form.php">
                     <h3>Contacto</h3>
-                    Nombre:<input type="text" name="fname" autofocus="autofocus" placeholder="Pepe" required/><br />
-                    Apellido: <input type="text" name="lname" autofocus="autofocus" placeholder="Gómez" required/><br />
-                    E-mail: <input type="email" name="email" autofocus="autofocus" placeholder="pepegomez@gmail.com" required/><br />
-                    Télefono: <input type="telefono" name="telefono" autofocus="autofocus" placeholder="612384956" required/><br />
+                    Nombre:<input type="text" name="fname" autofocus="autofocus" placeholder="Pepe" required="required"/><br />
+                    Apellido: <input type="text" name="lname" autofocus="autofocus" placeholder="Gómez" required="required"/><br />
+                    E-mail: <input type="email" name="email" autofocus="autofocus" placeholder="pepegomez@gmail.com,pepe2@gmail.com" required="required" multiple/><br />
+                    Télefono: <input type="text" pattern="[0-9]{9}" name="telefono" autofocus="autofocus" title="El telefono requiere de 9 números exactos y ningúna letra" placeholder="612384956" required="required"/><br />
                  <input type="submit" value="Envía la consulta"/>
                  </form>      
             </section>
