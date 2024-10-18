@@ -352,9 +352,9 @@ aside section ul li a:hover {
 	text-decoration: underline;
 }
 
-/*Formulario*/
+/*Formulario de comentarios*/
 
-section form {
+#content #mainContent section form {
     display: flex;
 
     flex-direction: column;
@@ -364,7 +364,7 @@ section form {
     padding: 0 22px;
 }
 
-section form p {
+#content #mainContent section form p {
     display: flex;
 
     align-items: left;
@@ -372,7 +372,7 @@ section form p {
     margin: 5px 0;
 }
 
-section form label {
+#content #mainContent section form label {
     width: 150px;
 
     text-align: right;
@@ -384,20 +384,32 @@ section form label {
     padding-right: 22px;
 }
 
-section form input[type="text"],
-section form input[type="email"],
-section form input[type="url"] {
+#content #mainContent section form input[type="text"],
+#content #mainContent section form input[type="email"],
+#content #mainContent section form input[type="url"] {
     width: 275px;
 }
 
-section form textarea{
+#content #mainContent section form textarea{
 	width: 275px;
 
 	height: 100px;
 }
 
-section form input[type="submit"]{
+#content #mainContent section form input[type="submit"]{
 	margin-left: 170px;
+}
+
+/* Formulario de contactos en el aside */
+
+#content aside section form {
+    display: flex;
+
+    flex-direction: column;
+
+    margin: 22px 0;
+
+    padding: 0 22px;
 }
 
 /*Footer*/
