@@ -56,6 +56,10 @@ body {
 
 	background: #f0f0f0;
 
+	a{
+		color: #777;
+	}
+
 }
 
 h2 {
