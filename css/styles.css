@@ -445,18 +445,22 @@ aside section ul li a:hover {
 
 /*Responsive Formulario Contactos*/
 
-/*Para pantallas de ordenador grandes*/
+/*Para pantallas de ordenador medianas y tablets*/
 @media (min-width: 768px) and (max-width: 1024px){
-    form {
+    #formContacto {
         width: 70%;
         padding: 15px;
     }
 
-	input[type="text"], input[type="email"], input[type="date"], input[type="range"], input[type="submit"] {
+	#formContacto input[type="text"], 
+	#formContacto input[type="email"], 
+	#formContacto input[type="date"], 
+	#formContacto input[type="range"], 
+	#formContacto input[type="submit"] {
         font-size: 17px;
     }
 
-    input[type="submit"] {
+    #formContacto input[type="submit"] {
         padding: 12px;
         font-size: 18px;
     }
@@ -464,16 +468,36 @@ aside section ul li a:hover {
 
 /*Para pantallas móvil*/
 @media (max-width: 767px) {
-    form {
-        width: 90%;
+	#formContacto {
+        width: 50%;
         padding: 15px;
     }
 
-    input[type="text"], input[type="email"], input[type="date"], input[type="range"], input[type="submit"] {
-        font-size: 16px; /* Ajuste de tamaño en móviles */
+    #formContacto p {
+        display: flex;
+		flex-direction: column;
+        align-items: flex-start;
+		padding: 0;
     }
-    
-    input[type="submit"] {
+
+    #formContacto p label {
+        text-align: left !important;
+		margin-left: 0;
+        font-weight: bold;
+        padding-right: 0;
+		padding-left: 0;
+    }
+
+    #formContacto input[type="text"],
+    #formContacto input[type="email"],
+    #formContacto input[type="date"],
+    #formContacto input[type="range"] {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    #formContacto input[type="submit"] {
+        font-size: 16px;
         padding: 12px;
     }
 }
