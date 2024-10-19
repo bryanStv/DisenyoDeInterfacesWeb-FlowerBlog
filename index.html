@@ -6,6 +6,9 @@
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/audio.js"></script>
+
     <title>The Flower Blog</title>
 </head>
 <body>
@@ -143,7 +146,7 @@
                 </ul>
             </section>
             <section>
-                <video width="320" height="182" controls>
+                <video id="videoFlores" width="320" height="182" controls>
                     <source src="media/video/flores.mp4" type="video/mp4">
                     </object>
                           Video acerca de flores.
@@ -203,16 +206,10 @@
 					<li><a href="#">Netsetter</a></li>
 					<li><a href="#">PSDTUTS+</a></li>
 				</ul>
-                <!-- The browser will automatically choose the format it supports.
-                <audio controls="false" autoplay>
-                    <source src="media/audio/voices-of-nature_birds_nature-sound-201923.mp3" type="audio/mp3"> 
-                If no support at all.
-                    HTML5 audio not supported -->
-                    <!-- Reproducción de audio en segundo plano sin controles -->
-                <audio autoplay loop>
+                <!-- AUDIO -> <audio autoplay loop>
                     <source src="media/audio/voices-of-nature_birds_nature-sound-201923.mp3" type="audio/mp3">
                     Tu navegador no soporta la etiqueta de audio.
-                </audio>
+                </audio>-->
            </audio>
            <br><br><br>
                 <div id="mapa">
@@ -241,5 +238,8 @@
 	</footer>
 
 </body>
+
+<audio id="audio1" src="media/audio/voices-of-nature_birds_nature-sound-201923.mp3"></audio>
+<audio id="audio2" src="media/audio/flowing-water-246403.mp3"></audio>
 
 </html>
