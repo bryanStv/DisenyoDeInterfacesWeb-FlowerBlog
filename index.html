@@ -169,10 +169,18 @@
             <section>
                 <form action="form.php">
                     <h3>Contacto</h3>
-                    Nombre:<input type="text" name="fname" autofocus="autofocus" placeholder="Pepe" required="required"/><br />
-                    Apellido: <input type="text" name="lname" autofocus="autofocus" placeholder="Gómez" required="required"/><br />
-                    E-mail: <input type="email" name="email" autofocus="autofocus" placeholder="pepegomez@gmail.com,pepe2@gmail.com" required="required" multiple/><br />
-                    Télefono: <input type="text" pattern="[0-9]{9}" name="telefono" autofocus="autofocus" title="El telefono requiere de 9 números exactos y ningúna letra" placeholder="612384956" required="required"/><br />
+                    <label for="fname">Nombre: </label>
+                    <input type="text" name="fname" placeholder="Pepe" required="required"/><br />
+                    <label for="lname">Apellido: </label>
+                    <input type="text" name="lname" placeholder="Gómez" required="required"/><br />
+                    <label for="nacimiento">Fecha de Nacimiento: </label>
+                    <input type="date" value="2000-01-01" name="nacimiento" title="La fecha en la que naciste"/><br>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" placeholder="pepegomez@gmail.com,pepe2@gmail.com" required="required" multiple/><br />
+                    <label for="telefono">Teléfono: </label>
+                    <input type="text" pattern="[0-9]{9}" name="telefono" title="El telefono requiere de 9 números exactos y ningúna letra" placeholder="612384956" required="required"/><br />
+                    <label for="adiccion">¿Cuánto te gustan las flores?</label>
+                    <input type="range" min="1" max="7" value="2" step="1" title="Necesitamos saber..." name="adiccion"/>
                  <input type="submit" value="Envía la consulta"/>
                  </form>      
             </section>

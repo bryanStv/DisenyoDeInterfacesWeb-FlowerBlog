@@ -410,6 +410,22 @@ aside section ul li a:hover {
     margin: 22px 0;
 
     padding: 0 22px;
+
+	label{
+		width: 150px;
+
+		text-align: left;
+	
+		vertical-align: top;
+	
+		font-weight: bold;
+	
+		padding-right: 22px;
+	}
+
+	input[type="submit"]{
+		margin-left: 170px;
+	}
 }
 
 /*Footer*/
