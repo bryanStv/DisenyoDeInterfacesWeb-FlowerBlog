@@ -3,8 +3,6 @@ window.onload = function() {
     const audio1 = document.getElementById("audio1");
     const audio2 = document.getElementById("audio2");
 
-    alert('Hola')
-
     function reproducirEnBucle() {
         audio1.play();
         
