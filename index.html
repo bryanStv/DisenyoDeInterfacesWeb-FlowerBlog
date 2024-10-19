@@ -128,6 +128,37 @@
                     <p><input type="submit" value="Post comment" /></p>
                 </form>        
             </section>
+            <br><br><br>
+            <section>
+                <form id="formContacto" action="form.php">
+                    <h3>¿Quieres contactar con nosotros?</h3>
+                    <p>
+                        <label for="fname">Nombre: </label>
+                        <input type="text" name="fname" placeholder="Pepe" required="required"/>
+                    </p>
+                    <p>
+                        <label for="lname">Apellido: </label>
+                        <input type="text" name="lname" placeholder="Gómez" required="required"/>
+                    </p>
+                    <p>
+                        <label for="nacimiento">Fecha de Nacimiento: </label>
+                        <input type="date" value="2000-01-01" name="nacimiento" title="La fecha en la que naciste"/>
+                    </p>
+                    <p>
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" placeholder="pepegomez@gmail.com,pepe2@gmail.com" required="required" multiple/>
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono: </label>
+                        <input type="text" pattern="[0-9]{9}" name="telefono" title="El telefono requiere de 9 números exactos y ningúna letra" placeholder="612384956" required="required"/>
+                    </p>
+                    <p>
+                        <label for="adiccion">¿Cuánto te gustan las flores?</label>
+                        <input type="range" min="1" max="7" value="2" step="1" title="Necesitamos saber..." name="adiccion"/>
+                    </p>
+                    <p><input type="submit" value="Enviar"/></p>
+                 </form>      
+            </section>
         </div>
 
         <aside>
@@ -165,24 +196,6 @@
                     <li><a href="#">May 2009</a></li>
                     <li><a href="#">June 2009</a></li>
                 </ul>
-            </section>
-            <section>
-                <form action="form.php">
-                    <h3>Contacto</h3>
-                    <label for="fname">Nombre: </label>
-                    <input type="text" name="fname" placeholder="Pepe" required="required"/><br />
-                    <label for="lname">Apellido: </label>
-                    <input type="text" name="lname" placeholder="Gómez" required="required"/><br />
-                    <label for="nacimiento">Fecha de Nacimiento: </label>
-                    <input type="date" value="2000-01-01" name="nacimiento" title="La fecha en la que naciste"/><br>
-                    <label for="email">E-mail: </label>
-                    <input type="email" name="email" placeholder="pepegomez@gmail.com,pepe2@gmail.com" required="required" multiple/><br />
-                    <label for="telefono">Teléfono: </label>
-                    <input type="text" pattern="[0-9]{9}" name="telefono" title="El telefono requiere de 9 números exactos y ningúna letra" placeholder="612384956" required="required"/><br />
-                    <label for="adiccion">¿Cuánto te gustan las flores?</label>
-                    <input type="range" min="1" max="7" value="2" step="1" title="Necesitamos saber..." name="adiccion"/>
-                 <input type="submit" value="Envía la consulta"/>
-                 </form>      
             </section>
         </aside>
     </div>

@@ -402,7 +402,7 @@ aside section ul li a:hover {
 
 /* Formulario de contactos en el aside */
 
-#content aside section form {
+#content #mainContent section #formContacto {
     display: flex;
 
     flex-direction: column;
@@ -411,10 +411,18 @@ aside section ul li a:hover {
 
     padding: 0 22px;
 
+	p{
+		display: flex;
+
+		align-items: left;
+	
+		margin: 5px 0;
+	}
+
 	label{
 		width: 150px;
 
-		text-align: left;
+		text-align: right;
 	
 		vertical-align: top;
 	
@@ -423,9 +431,51 @@ aside section ul li a:hover {
 		padding-right: 22px;
 	}
 
+	input[type="text"],
+	input[type="email"],
+	input[type="date"],
+	input[type="range"]{
+		width: 275px;
+	}
+
 	input[type="submit"]{
 		margin-left: 170px;
 	}
+}
+
+/*Responsive Formulario Contactos*/
+
+/*Para pantallas de ordenador grandes*/
+@media (min-width: 768px) and (max-width: 1024px){
+    form {
+        width: 70%;
+        padding: 15px;
+    }
+
+	input[type="text"], input[type="email"], input[type="date"], input[type="range"], input[type="submit"] {
+        font-size: 17px;
+    }
+
+    input[type="submit"] {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+/*Para pantallas móvil*/
+@media (max-width: 767px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="email"], input[type="date"], input[type="range"], input[type="submit"] {
+        font-size: 16px; /* Ajuste de tamaño en móviles */
+    }
+    
+    input[type="submit"] {
+        padding: 12px;
+    }
 }
 
 /*Footer*/
